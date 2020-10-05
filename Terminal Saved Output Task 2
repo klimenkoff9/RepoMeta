@@ -1,0 +1,65 @@
+Last login: Tue Sep 29 11:59:37 on console
+Welcome home, Dennis!
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+Denniss-Air:~ klimenkoff9$ cd Desktop/Lab\ 6\ CISC\ 3140/
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ mkdir Lab6
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ ls
+Lab6
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ mkdir Repo1
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ cd Repo1/
+Denniss-Air:Repo1 klimenkoff9$ touch helloworld.java
+Denniss-Air:Repo1 klimenkoff9$ sudo gedit helloworld.java
+Password:
+sudo: gedit: command not found
+Denniss-Air:Repo1 klimenkoff9$ sudo nano helloworld.java
+Denniss-Air:Repo1 klimenkoff9$ javac helloworld.java
+java helloworld.java:1: error: class HelloWorld is public, should be declared in a file named HelloWorld.java
+public class HelloWorld {
+       ^
+1 error
+Denniss-Air:Repo1 klimenkoff9$ sudo nano helloworld.java
+Denniss-Air:Repo1 klimenkoff9$ javac helloworld.java
+Denniss-Air:Repo1 klimenkoff9$ java helloworld.java
+Hello World
+Denniss-Air:Repo1 klimenkoff9$ cd ..
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ mkdir RepoMeta
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ touch log.txt
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ clear
+
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ mkdir Repo2
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ cd Repo
+-bash: cd: Repo: No such file or directory
+Denniss-Air:Lab 6 CISC 3140 klimenkoff9$ cd Repo2
+Denniss-Air:Repo2 klimenkoff9$ git init
+Initialized empty Git repository in /Users/klimenkoff9/Desktop/Lab 6 CISC 3140/Repo2/.git/
+Denniss-Air:Repo2 klimenkoff9$ touch RepoB.txt
+Denniss-Air:Repo2 klimenkoff9$ git add RepoB.txt
+Denniss-Air:Repo2 klimenkoff9$ sudo nano RepoB.txt
+Denniss-Air:Repo2 klimenkoff9$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   RepoB.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   RepoB.txt
+
+Denniss-Air:Repo2 klimenkoff9$ git add RepoB.txt
+Denniss-Air:Repo2 klimenkoff9$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   RepoB.txt
+
+Denniss-Air:Repo2 klimenkoff9$ 
